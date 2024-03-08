@@ -60,15 +60,14 @@ body {
 .navbar {
     max-width: 350px;
     width: 100%;
-    list-style: none;
-
-    padding-right: 15%;
+    list-style: none;   
 }
 
 .navbar ul {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 10px 50px;
 }
 
 .navbar ul li {
@@ -93,16 +92,12 @@ body {
 }
 
 
-#apres {
-    /* id refencia com "#" */
-    height: 100vh;
-    /* altura */
-    width: 100%;
-    /*largura*/
+#apres {    /* id refencia com "#" */
+    height: 100vh;     /* altura */
+    width: 100%;    /*largura*/
 
     display: flex;
-    align-items: center;
-    /*Alinhar vertical*/
+    align-items: center;     /*Alinhar vertical*/
     justify-items: center;
 
     background: var(--color-black);
@@ -118,7 +113,7 @@ body {
     /*alinhar horizontal*/
     align-items: center;
     /*alinhar vertical*/
-
+   
     flex-direction: column;
 
     background: var(--color-black);
@@ -132,7 +127,7 @@ body {
     width: fit-content;
 
     font-size: 4rem;
-    line-height: 2rem;
+    line-height: 4rem;
 
     animation: written_text .5s ease forwards;
     /* Aparecer lentamente*/
@@ -164,6 +159,7 @@ body {
 
     animation: written_text_box 1s ease forwards;
     animation-delay: .5s;
+    
 }
 
 .caixa-apres div h1:nth-child(1) span {
@@ -376,6 +372,7 @@ body {
 
 }
 
+
 .caixa-descr h2 p {
     display: inline-block;
     font-size: 3rem;
@@ -410,8 +407,6 @@ body {
     font-size: 2rem;
 
 }
-
-/*Final do sobre*/
 
 #projetos {
     height: 100vh;
@@ -522,8 +517,6 @@ body {
 .projetos a:hover {
     opacity: .7;
 }
-
-/*Final Projeto*/
 
 #contato {
     display: flex;
@@ -656,7 +649,7 @@ body {
 }
 
 /*responsividade*/
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 900px) {
     /*menu*/
     .navbar {
         display: none;
@@ -690,7 +683,7 @@ body {
     }
 
     /*perfil*/
-    .caixa-descr h2 p {
+     .caixa-descr h2 p {
         padding: 0px;
         padding-left: 40px;
         font-size: 30px;
@@ -703,24 +696,54 @@ body {
     }
 
     .caixa-descr h4 {
-        font-size: 16px;
-        width: 180%;
-        height: 180%;
+        font-size: 15px;
+        width: 160%;
+        margin: 50px;
+        text-align: justify;
     }
-
-    .container-projetos {
-        line-height: 30px;
+  
+    .caixa-projetos h2 {
+        line-height: 100%;
     }
 
     .envelope-projetos {
         flex-direction: column;
+        height: 100%;
+    
+        color: var(--color-white);
     }
+    
 
     .img-projetos img {
         line-height: 10px;
     }
+    .caixa-contato h2 {
+        margin: 0 auto;
+        padding-top: 60%;
+        
+    }
+
+    #contato {
+        flex-direction: column;
+        align-items:baseline;  
+        height: 50vh;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .caixa-contato-icon {
+        display: flex;
+        flex-direction: column;
+        align-items:baseline;  
+    }
+  
+    #rodape {
+        display: flex;
+        margin-top: 100px;    
+    }
 
     .caixa-rodape {
         flex-direction: column;
+        line-height: 100px;
     }
 }
