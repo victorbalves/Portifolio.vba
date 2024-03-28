@@ -2,11 +2,10 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
 }
 
 :root {
-    /* elemnto raiz */
+    /* elemento raiz */
     --color-white: white;
     --color-black: black;
     --color-red: rgba(171, 4, 4, 0.915);
@@ -14,8 +13,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    /*Rolagem suave*/
+    scroll-behavior: smooth;    /*Rolagem suave*/
     font-size: 10px;
     background: var(--color-black);
 }
@@ -28,14 +26,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
-
     padding: 15px 30px;
     position: fixed;
-
     background: transparent;
-
     z-index: 2;
 }
 
@@ -46,10 +40,8 @@ body {
 .cuca-titulo h1 {
     display: flex;
     color: var(--color-white);
-
     font-size: 2rem;
     padding-left: 10px;
-
     transition: opacity .3s ease;
 }
 
@@ -77,13 +69,10 @@ body {
 
 .navbar ul li a {
     display: flex;
-
     text-decoration: none;
-
     font-size: 1.5rem;
     font-weight: 700;
     transition: opacity .3s ease;
-
     color: var(--color-white);
 }
 
@@ -95,11 +84,9 @@ body {
 #apres {    /* id refencia com "#" */
     height: 100vh;     /* altura */
     width: 100%;    /*largura*/
-
     display: flex;
     align-items: center;     /*Alinhar vertical*/
     justify-items: center;
-
     background: var(--color-black);
 }
 
@@ -107,11 +94,10 @@ body {
     /* classe refenceia com "." */
     height: 100%;
     width: 50%;
-
     display: flex;
     justify-content: center;
     /*alinhar horizontal*/
-    align-items: center;
+    align-items: center; 
     /*alinhar vertical*/
    
     flex-direction: column;
@@ -219,14 +205,12 @@ body {
 .ferram ul li img {
     width: 30px;
     height: auto;
-
-    transition: tranform .3s ease;
+    transition: .3s ease;
 }
 
-.ferram ul li div img:hover {
-    /*imagem clicável*/
-    transform: scale(1.2);
-    cursor: pointer;
+.ferram ul li img:hover {
+    width: 40px;
+    
 }
 
 /*nome ponteiro image*/
